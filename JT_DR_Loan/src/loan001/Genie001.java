@@ -47,6 +47,18 @@ public class Genie001 {
 			num++;
 		}
 		System.out.println("1에서 10가지의 합은 ==>"+sum);
+		
+		
+		int res = 0;
+		
+		for(int x = 2 ; x <= 9 ; x++) {
+			for(int y = 1 ; y <=9 ; y++) {
+				res = x*y;
+				System.out.println(x+"곱하기"+y+"는"+res);
+			}
+		}
+		
+		
 	}
 
 }
