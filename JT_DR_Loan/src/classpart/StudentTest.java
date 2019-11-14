@@ -4,11 +4,11 @@ public class StudentTest {
 
 	public static void main(String[] args) {
 
-		Student studentAhn = new Student();
-		studentAhn.studentName = "Angelo"; 
+		Student studentAngelo = new Student();
+		studentAngelo.studentName = "Angelo"; 
 		
-		System.out.println(studentAhn.studentName);
-		//System.out.println(studentAhn.getStudentName());
+		System.out.println(studentAngelo.studentName);
+		//System.out.println(studentAngelo.getStudentName());
 	}
 }
 
