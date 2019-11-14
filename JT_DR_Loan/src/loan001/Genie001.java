@@ -9,6 +9,19 @@ public class Genie001 {
 			dnum = dnum + 0.1;
 		}
 		System.out.println(dnum);
+
+		/*
+		final int MAX_COUNT = 30;
+		System.out.println(MAX_COUNT);
+		
+		for(int i = 0; i < MAX_COUNT ; i++) {
+			System.out.println(i);
+		}*/
+		
+		int num = 10;
+		System.out.println(num);
+		int result = ~num;
+		System.out.println(result);
 	}
 
 }
