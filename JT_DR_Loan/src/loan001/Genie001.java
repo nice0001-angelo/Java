@@ -17,12 +17,12 @@ public class Genie001 {
 		for(int i = 0; i < MAX_COUNT ; i++) {
 			System.out.println(i);
 		}*/
-		
+		/*
 		int num = 10;
 		System.out.println(num);
 		int result = ~num;
 		System.out.println(result);
-		
+		*/
 		
 		int floor = 4;
 		
@@ -39,6 +39,14 @@ public class Genie001 {
 				break;				
 		}
 		
+		int num = 1;
+		int sum = 0;
+		
+		while(num <= 10) {
+			sum += num;
+			num++;
+		}
+		System.out.println("1에서 10가지의 합은 ==>"+sum);
 	}
 
 }
