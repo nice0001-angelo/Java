@@ -1,4 +1,4 @@
-package loan001;
+package loan;
 
 public class Genie001 {
 
