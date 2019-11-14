@@ -8,7 +8,7 @@ public class StudentTest {
 		studentAhn.studentName = "Angelo"; 
 		
 		System.out.println(studentAhn.studentName);
-		System.out.println(studentAhn.getStudentName());
+		//System.out.println(studentAhn.getStudentName());
 	}
 }
 
