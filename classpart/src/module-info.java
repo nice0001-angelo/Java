@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author njh
- *
- */
-module classpart {
-}
