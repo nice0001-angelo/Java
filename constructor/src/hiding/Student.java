@@ -1,9 +1,9 @@
 package hiding;
 
 public class Student {
-	int studentID;
+	private int studentID;
 	private String studentName;
-	int grade;
+	private int grade;
 	private String address;
 
 
@@ -23,4 +23,10 @@ public String getAddress() {
 public void setAddress(String address) {
 	this.address = address;
 }
+
+public int getGrade() {
+	return grade;
+}
+
+
 }
