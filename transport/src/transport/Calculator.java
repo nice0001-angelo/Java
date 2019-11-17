@@ -5,6 +5,7 @@ public class Calculator {
 	String CalMaker;
 	int CalModelNum;
 	String CalOwner;
+	String color;
 	
 	//Conductor
 	public Calculator() {
@@ -22,37 +23,42 @@ public class Calculator {
 		this.CalModelNum = CalModelNum;
 		this.CalOwner = CalOwner;
 	}
+	//Method set color
+	void setColor(String color) {
+		this.color = color;
+	}
+	
 	
 	//Method powerOn()
-	void powerOn() {
+	static void powerOn() {
 		System.out.println("Power on");
 	}
 	
 	//Method Plus()
-	int plus(int x, int y) {
+	static int plus(int x, int y) {
 		int result = x + y;
 		return result;
 	}
 	
 	//Method divide()
-	double divide(int x, int y) {
+	static double divide(int x, int y) {
 		double result = (double)x/(double)y;
 		return result;
 	}
 	
 	//Method powerOff()
-	void powerOff() {
+	static void powerOff() {
 		System.out.println("Power off");
 	}
 	
 	//정사각형 넓이 계산 Method
-	double areaRectangle(double width) {
+	static double areaRectangle(double width) {
 		double result = width*width;
 		return result;
 	}
 	
 	//사각형 넓이 계산 Method(areaRectangel overloading)
-	double areaRectangle(double height, double width) {
+	static double areaRectangle(double height, double width) {
 		double result = height*width;
 		return result;
 	}
