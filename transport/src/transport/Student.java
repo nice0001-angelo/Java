@@ -1,4 +1,3 @@
-								
 package transport;
 
 public class Student {
@@ -22,6 +21,6 @@ public class Student {
 	}
 	
 	public void showInfo() {
-		System.out.println(studentName +"¥‘¿« ≥≤¿∫ µ∑¿∫"+money+"¿‘¥œ¥Ÿ");
+		System.out.println(studentName +"is get olly "+money+"Korean Won");
 	}
 }

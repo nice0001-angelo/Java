@@ -11,7 +11,7 @@ public class TakeTrans {
 		studentAngelo.showInfo();
 		bus100.showInfo();
 		
-		Subway subwayGreen = new Subway("2È£¼±");
+		Subway subwayGreen = new Subway("Green Number 2");
 		studentAngelo.takeSubway(subwayGreen);
 		studentAngelo.showInfo();
 		subwayGreen.showInfo();
