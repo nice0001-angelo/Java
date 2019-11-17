@@ -5,7 +5,8 @@ public class CalculatorExec {
 		Calculator mycal = new Calculator();
 		mycal.powerOn();
 		
-		int result1 = mycal.plus(10, 20);
+		// plus 메소드를 static으로 선언했으므로 객체화 하지 않고 직접 접근 가능해짐
+		int result1 = Calculator.plus(10, 20);
 		System.out.println("Plus result:"+result1);
 		
 		double result2 = mycal.divide(50, 5);
