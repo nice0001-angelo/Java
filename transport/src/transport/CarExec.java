@@ -37,8 +37,9 @@ public class CarExec {
 		System.out.println("수정된최고스피드:" + myCar3.maxSpeed);
 		System.out.println("수정된현재스피드:" + myCar3.speed);
 		
+		
 		System.out.println("---------------------------");
-		Car myCar4 = new Car();
+		Car myCar4 = new Car("GLE450");
 		myCar4.keyTurnOn();
 		myCar4.run();
 		}
