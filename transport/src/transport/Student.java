@@ -1,11 +1,22 @@
 package transport;
+import java.util.ArrayList;
 
 public class Student {
+	int studentID;
+	String subjectName;
+	ArrayList<Subject> subjectList;
 	public String studentName;
 	public int grade;
 	public int money;
 	
 	public Student() {
+	}
+	
+	Public Student(int studentID, String subjectName) {
+		this.studentID = new studentID;
+		this.subjectName = new subjectName;
+		subjectList = new ArrayList<Subject>;
+		
 	}
 	
 	public Student(String studentName, int money) {
