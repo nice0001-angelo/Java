@@ -5,7 +5,7 @@ public class CalculatorExec {
 		Calculator mycal = new Calculator();
 		mycal.powerOn();
 		
-		// plus ¸Þ¼Òµå¸¦ staticÀ¸·Î ¼±¾ðÇßÀ¸¹Ç·Î °´Ã¼È­ ÇÏÁö ¾Ê°í Á÷Á¢ Á¢±Ù °¡´ÉÇØÁü
+		// plus ìž…ë‹ˆë‹¤
 		int result1 = Calculator.plus(10, 20);
 		System.out.println("Plus result:"+result1);
 		
@@ -17,9 +17,9 @@ public class CalculatorExec {
 		System.out.println("==========================");
 		
 		double result3 = mycal.areaRectangle(20);
-		System.out.print("Á¤»ç°¢ÇüÀÇ ³ÐÀÌ´Â:"+result3+"ÀÔ´Ï´Ù\n");
+		System.out.print("ê²°ê³¼3:"+result3+"ìž…ë‹ˆë‹¤\n");
 		
 		double result4 = mycal.areaRectangle(20,40);
-		System.out.print("Á÷»ç°¢ÇüÀÇ ³ÐÀÌ´Â:"+result4+"ÀÔ´Ï´Ù");
+		System.out.print("ê²°ê³¼4:"+result4+"ìž…ë‹ˆë‹¤");
 	}
 }
