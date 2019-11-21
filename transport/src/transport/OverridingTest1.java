@@ -16,7 +16,7 @@ public class OverridingTest1 {
 		//System.out.println(customerKim.showCustomerInfo());
 		
 		int price = 10000;
-		System.out.println(customerLee.getCustomerName() +" ���� �����ؾ� �ϴ� �ݾ��� " + customerLee.calcPrice(price) + "���Դϴ�.");
-		System.out.println(customerKim.getCustomerName() +" ���� �����ؾ� �ϴ� �ݾ��� " + customerKim.calcPrice(price) + "���Դϴ�.");
+		System.out.println("Name is : "+customerLee.getCustomerName() +" and price is : " + customerLee.calcPrice(price));
+		System.out.println("Name is : "+customerKim.getCustomerName() +" and price is : " + customerKim.calcPrice(price));
 	}
 }
