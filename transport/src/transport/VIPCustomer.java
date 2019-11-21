@@ -1,5 +1,9 @@
 package transport;
 
+/**
+ * @author Angelo
+ *
+ */
 public class VIPCustomer extends Customer{
 
 	private int agentID;
@@ -22,14 +26,18 @@ public class VIPCustomer extends Customer{
 	//	System.out.println("VIPCusomer(int, String) ������ ȣ��");
 	}
 	
-	public int calcPrice(int price){
+	
+	@Override
+	public int calcPrice(int price) {
 		bonusPoint += price * bonusRatio;
 		return price - (int)(price * saleRatio);
 	}
+		
+	
 	
 	public int getAgentID(){
 		return agentID;
 	}
-	
+
 	
 }

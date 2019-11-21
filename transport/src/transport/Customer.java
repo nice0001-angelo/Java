@@ -1,5 +1,9 @@
 package transport;
 
+/**
+ * @author Angelo
+ *
+ */
 public class Customer {
 	
 	protected int customerID;
