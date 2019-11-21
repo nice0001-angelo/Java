@@ -1,6 +1,6 @@
 package transport;
 import java.util.ArrayList;
-import javax.security.auth.*;
+
 
 public class Student {
 	int studentID;
@@ -36,7 +36,7 @@ public class Student {
 	}
 	
 	public void showInfo() {
-		System.out.println(studentName +"is get olly "+money+"Korean Won");
+		System.out.println(studentName +"is get only "+money+"Korean Won");
 	}
 	
 	public void addSubject(String name, int score) {
@@ -50,8 +50,8 @@ public class Student {
 		int total = 0;
 		for(Subject s : subjectList) {
 			total += s.getScorePoint();
-			System.out.println("학생 "+studentName+"의 "+s.getName()+"과목 성적은 "+s.getScorePoint()+"입니다");
+			System.out.println("Subject : "+s.getName()+" 's Score is : "+s.getScorePoint());
 			}
-	System.out.println("학생 "+studentName+"의 총점은 "+total+"입니다");
+	System.out.println("Student : "+studentName+" 's total Score is :  "+total);
 	}
 }
