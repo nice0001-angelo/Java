@@ -17,7 +17,7 @@ public class SmartTelevision implements RemoteControl, Searchable {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println(" TV Volume is : " + this.volume);
+		System.out.println("TV Volume is : " + this.volume);
 	}
 	
 	public void search(String url) {
