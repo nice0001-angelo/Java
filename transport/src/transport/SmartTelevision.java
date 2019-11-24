@@ -1,18 +1,14 @@
 package transport;
 
-public class Television implements RemoteControl {
-	//valueable
+public class SmartTelevision implements RemoteControl, Searchable {
 	private int volume;
 	
-	//turnOn() 
 	public void turnOn() {
 		System.out.println("TV Turn On.");
 	}	
-	//turnOff() 
 	public void turnOff() {
 		System.out.println("TV Turn Off.");
 	}
-	//setVolume() 
 	public void setVolume(int volume) {
 		if(volume>RemoteControl.MAX_VOLUME) {
 			this.volume = RemoteControl.MAX_VOLUME;
@@ -21,9 +17,10 @@ public class Television implements RemoteControl {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("TV Voulume is : " + this.volume);
+		System.out.println(" TV Volume is : " + this.volume);
 	}
 	
-	
+	public void search(String url) {
+		System.out.println(url + " Searching ");
+	}
 }
-
