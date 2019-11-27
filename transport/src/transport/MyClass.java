@@ -22,7 +22,7 @@ public class MyClass {
 		rc.setVolume(5);
 	}
 
-		//method
+		//method add
 	void methodB(RemoteControl rc) {
 		rc.turnOn();
 		rc.setVolume(5);
