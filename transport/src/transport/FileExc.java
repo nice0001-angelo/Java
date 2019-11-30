@@ -1,7 +1,7 @@
 package transport;
 
 import java.io.*;
-import java.text.SimpleDataFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class FileExc {
@@ -18,10 +18,20 @@ public class FileExc {
 		if(file3.exists() == false) {file3.createNewFile();}
 		
 		File temp = new File("C:/WorkSpace/java/transport/Temp");
-		File[] contents = temp.listFile();
+		File[] contents = temp.listFiles();
 		
 		System.out.println("Time \t\t\t Type \t\t Byte \t Name");
 		System.out.println("===================================");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd a HH:mm");
+		for(File file : contents) {
+			System.out.print(sdf.format(new Date(file.lastModified())));
+			if(file.isDirectory()) {
+				System.out.print("\t <DIR> \t\t\t"+file.getName());
+			}else {
+				System.out.print("\t\t\t" + file.length() + "\t" + file.getName());
+			}
+				
+			System.out.println();
+		}
 	}
-
 }
