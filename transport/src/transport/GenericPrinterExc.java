@@ -8,7 +8,11 @@ public class GenericPrinterExc {
 		powderPrinter.setMaterial(new Powder());
 		Powder powder = powderPrinter.getMaterial();
 		System.out.println(powderPrinter);
-
+		
+		GenericPrinter<Plastic> plasticPrinter = new GenericPrinter<Plastic>();
+		
+		plasticPrinter.setMaterial(new Plastic());
+		Plastic plastic = plasticPrinter.getMaterial();
+		System.out.println(plasticPrinter);
 	}
-
 }
