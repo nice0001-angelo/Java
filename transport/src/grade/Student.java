@@ -8,4 +8,10 @@ public class Student {
 	private Subject majorSubject;
 	
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
+	
+	public Student(int studentId, String studentName, Subject majorSubject) {
+		this.studetnId = studetnId;
+		this.studentName = studentName;
+		this.majorSubject = majorSubject;
+	}
 }
