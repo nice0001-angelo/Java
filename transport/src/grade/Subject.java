@@ -8,7 +8,7 @@ public class Subject {
 	private int subjectId;  	//과목번호
 	private int gradeType;		//과목타입
 	
-	private ArrayList<Student> studentList = new ArrayList<Sutdent>();
+	private ArrayList<Student> studentList = new ArrayList<Student>();
 	
 	//생성자	
 	public Subject(String subjectName, int subjectId) {
