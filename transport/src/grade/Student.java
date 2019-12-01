@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Student {
 	
-	private int studetnId;         //학생 번호
+	private int studentId;         //학생 번호
 	private String studentName;    //학생 이름
 	private Subject majorSubject;  //전공
 	
