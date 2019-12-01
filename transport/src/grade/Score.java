@@ -14,6 +14,7 @@ public class Score {
 		this.point = point;
 	}
 	
+	//학생번호 가져오기 메소드
 	public int getStudentId() {
 		return studentId;
 	}
