@@ -13,7 +13,7 @@ public class Student {
 	
 	//생성자 : 학생번호 학생명 전공
 	public Student(int studentId, String studentName, Subject majorSubject) {
-		this.studetnId = studetnId;
+		this.studentId = studentId;
 		this.studentName = studentName;
 		this.majorSubject = majorSubject;
 	}
