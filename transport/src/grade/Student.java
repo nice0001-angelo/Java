@@ -18,22 +18,27 @@ public class Student {
 		this.majorSubject = majorSubject;
 	}
 	
+	//점수 추가
 	public void addSubjectScore(Score score) {
 		scoreList.add(score);
 	}
 	
+	//학생번호 가져오기
 	public int getStudentId() {
 		return studentId;
 	}
 	
+	//학생번호 세팅하기
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 	
+	//학생이름 가져오기
 	public String getStudentName() {
 		return studentName;
 	}
 	
+	//학생이름 세팅하기
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
