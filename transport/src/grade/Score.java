@@ -34,10 +34,12 @@ public class Score {
 		this.subject = subject;
 	}
 	
+	//점수가져오기 메소드
 	public int getPoint() {
 		return point;
 	}
 	
+	//점수 세팅하기 메소드
 	public void setPoint(int point) {
 		this.point = point;
 	}
