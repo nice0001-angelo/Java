@@ -55,4 +55,8 @@ public class Student {
 	public ArrayList<Score> getScoreList(){
 		return scoreList;
 	}
+	
+	public void setScoreList(ArrayList<Score> scoreList) {
+		this.scoreList = scoreList;
+	}
 }
