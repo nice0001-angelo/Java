@@ -3,9 +3,10 @@ package grade;
 import java.util.ArrayList;
 
 public class Student {
-	private int studetnId;
-	private String studentName;
-	private Subject majorSubject;
+	
+	private int studetnId;         //학생 id
+	private String studentName;    //학생 이름
+	private Subject majorSubject;  //전공과목
 	
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
 	
