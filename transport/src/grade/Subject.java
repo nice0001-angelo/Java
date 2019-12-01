@@ -32,4 +32,20 @@ public class Subject {
 	public void setSubjectId() {
 		this.subjectId = subjectId;
 	}
+	
+	public ArrayList<Student> getStudentList(){
+		return studentList;
+	}
+	
+	public void setStudentList(ArrayList<Student> studentList) {
+		this.studentList = studentList;
+	}
+	
+	public int getGradeType() {
+		return gradeType;
+	}
+	
+	public void setGradeType(int gradeType) {
+		this.gradeType = gradeType;
+	}
 }
