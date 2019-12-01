@@ -28,18 +28,27 @@ public class Student {
 		return studentId;
 	}
 	
-	//학생번호 세팅하기
+	//학생번호 세팅하기 메소드
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 	
-	//학생이름 가져오기
+	//학생이름 가져오기 메소드
 	public String getStudentName() {
 		return studentName;
 	}
 	
-	//학생이름 세팅하기
+	//학생이름 세팅하기 메소드
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
+	}
+	
+	//전공 세팅하기 메소드
+	public Subject getMajorSubject() {
+		return majorSubject;
+	}
+	
+	public void setMajorSubject(Subject majorSubject) {
+		this.majorSubject = majorSubject;
 	}
 }
