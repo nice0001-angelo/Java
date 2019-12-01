@@ -14,7 +14,22 @@ public class Subject {
 	public Subject(String subjectName, int subjectId) {
 		this.subjectName = subjectName;
 		this.subjectId = subjectId;
-		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식 
+		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식
 	}
-
+	
+	public String getSubjectName() {
+		return subjectName;
+	}
+	
+	public void setSubjectName(String subjectName) {
+		this.subjectName = subjectName;
+	}
+	
+	public int getSubjectId() {
+		return subjectId;
+	}
+	
+	public void setSubjectId() {
+		this.subjectId = subjectId;
+	}
 }
