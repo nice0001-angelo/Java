@@ -9,5 +9,12 @@ public class Subject {
 	private int gradeType;		//과목타입
 	
 	private ArrayList<Student> studentList = new ArrayList<Sutdent>();
+	
+	//생성자	
+	public Subject(String subjectName, int subjectId) {
+		this.subjectName = subjectName;
+		this.subjectId = subjectId;
+		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식 
+	}
 
 }
