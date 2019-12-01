@@ -19,14 +19,17 @@ public class Score {
 		return studentId;
 	}
 	
+	//학생번호 세팅하기 메소드
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 	
+	//과목 가져오기 메소드
 	public Subject getSubject() {
 		return subject;
 	}
 	
+	//과목 세팅하기 메소드
 	public void setSubject(Subject subject) {
 		this.subject = subject;
 	}
@@ -38,4 +41,6 @@ public class Score {
 	public void setPoint(int point) {
 		this.point = point;
 	}
+	
+	
 }
