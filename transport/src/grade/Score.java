@@ -44,5 +44,7 @@ public class Score {
 		this.point = point;
 	}
 	
-	
+	public String toString() {
+		return "학번"+studentId+","+subject.getSubjectName()+":"+point;
+	}
 }
