@@ -1,4 +1,4 @@
-package grade;
+package school;
 
 public class Score {
 	//클래스 필드

@@ -1,4 +1,4 @@
-package grade;
+package school;
 
 import java.util.ArrayList;
 
