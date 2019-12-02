@@ -54,7 +54,9 @@ public class GenerateGradeReport {
 			
 			getScoreGrade(student, subject.getSubjectId());
 			
-			
+			buffer.append("\n");
+			buffer.append(LINE);
+		
 		}
 	}
 	
