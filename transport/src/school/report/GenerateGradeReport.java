@@ -39,6 +39,11 @@ public class GenerateGradeReport {
 		buffer.append(GenerateGradeReport.HEADER);
 		buffer.append(GenerateGradeReport.LINE);
 	}
-	
+
+	public void makeBody(Subject subject) {
+		ArrayList<Student> studentList = subject.getStudentList();
+		
+		
+	}
 	
 }
