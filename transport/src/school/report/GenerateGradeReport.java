@@ -14,6 +14,6 @@ import school.School;
 import utils.Define;
 
 public class GenerateGradeReport {
-	School school = School.getInstance();
+	School school = School.getInstnace();
 
 }
