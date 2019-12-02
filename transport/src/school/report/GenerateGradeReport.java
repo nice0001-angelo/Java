@@ -21,7 +21,14 @@ public class GenerateGradeReport {
 	private StringBuffer buffer = new StringBuffer();
 	
 	public String getReport() {
+		ArrayList<Subject> subjectList = school.getSubjectList();
 		
+		for(Subject subject : subjectList) {
+			makeHeader(subject);
+			makebody(subject);
+			makefooter();
+		}
+		return buffer.toString();
 	}
 
 }
