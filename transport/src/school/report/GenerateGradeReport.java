@@ -61,5 +61,6 @@ public class GenerateGradeReport {
 	
 	public void getScoreGrade(Student student, int subjectId) {
 		ArrayList<Score> scoreList =student.getScoreList();
+		int majorId = student.getMajorSubject().getSubjectId();
 	}
 }
