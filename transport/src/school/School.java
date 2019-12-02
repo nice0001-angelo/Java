@@ -25,4 +25,8 @@ public class School {
 	public void addStudent(Student student) {
 		studentList.add(student);
 	}
+	
+	public ArrayList<Subject> getSubjectList(){
+		return subjectList;
+	}
 }
