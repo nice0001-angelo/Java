@@ -51,6 +51,10 @@ public class GenerateGradeReport {
 			buffer.append("|");
 			buffer.append(student.getMajorSubject().getSubjectName()+"\t");
 			buffer.append("|");
+			
+			getScoreGrade(student, subject.getSubjectId());
+			
+			
 		}
 	}
 	
