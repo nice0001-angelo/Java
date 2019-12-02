@@ -43,7 +43,9 @@ public class GenerateGradeReport {
 	public void makeBody(Subject subject) {
 		ArrayList<Student> studentList = subject.getStudentList();
 		
-		
+		for(int i = 0 ; i< studentList.size(); i++) {
+			
+		}
 	}
 	
 }
