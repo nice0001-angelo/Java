@@ -56,8 +56,10 @@ public class GenerateGradeReport {
 			
 			buffer.append("\n");
 			buffer.append(LINE);
-		
 		}
 	}
 	
+	public void getScoreGrade(Student student, int subjectId) {
+		
+	}
 }
