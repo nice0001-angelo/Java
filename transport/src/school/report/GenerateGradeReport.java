@@ -44,7 +44,13 @@ public class GenerateGradeReport {
 		ArrayList<Student> studentList = subject.getStudentList();
 		
 		for(int i = 0 ; i< studentList.size(); i++) {
-			
+			Student student = studentList.get(i);
+			buffer.append(student.getStudentName());
+			buffer.append("|");
+			buffer.append(student.getStudentId());
+			buffer.append("|");
+			buffer.append(student.getMajorSubject().getSubjectName()+"\t");
+			buffer.append("|");
 		}
 	}
 	
