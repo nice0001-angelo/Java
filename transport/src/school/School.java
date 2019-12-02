@@ -11,4 +11,14 @@ public class School {
 	private ArrayList<Subject> subjectList = new ArrayList<Subject>(); //과목 리스트
 	
 	private School() {}
+	
+	public static School getInstnace() {
+		if(instance == null)
+			instance = new School();
+		return instance;
+	}
+	
+	public ArrayList<Student> getStudentList(){
+		return studentList;
+	}
 }
