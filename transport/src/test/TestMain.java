@@ -20,7 +20,28 @@ public class TestMain {
 		
 		test.createSubject();
 		test.createStudent();
-
+		
+		String report = test.gradeReport.getReport(); //성적 결과 생성
+		System.out.println(report);
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
