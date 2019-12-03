@@ -41,10 +41,10 @@ public class TestMain {
 		Student student5 = new Student(171590, "김유식", math);
 		
 		goodSchool.addStudent(student1);
-		goodSchoo2.addStudent(student2);
-		goodSchoo3.addStudent(student3);
-		goodSchoo4.addStudent(student4);
-		goodSchoo5.addStudent(student5);
+		goodSchool.addStudent(student2);
+		goodSchool.addStudent(student3);
+		goodSchool.addStudent(student4);
+		goodSchool.addStudent(student5);
 	}
 	
 	
