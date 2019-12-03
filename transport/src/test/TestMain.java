@@ -33,6 +33,9 @@ public class TestMain {
 		goodSchool.addSubject(math);
 	}
 	
+	public void createStudent() {
+		Student student1 = new Student(18122, "남진현", korean);
+	}
 	
 	
 	
