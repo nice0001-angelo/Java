@@ -26,7 +26,8 @@ public class TestMain {
 	}
 
 	public void creatSubject() {
-		
+		korean = new Subject("국어", Define.KOREAN);
+		math = new Subject("수학", Define.MATH);
 	}
 	
 	
