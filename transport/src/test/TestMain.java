@@ -40,7 +40,11 @@ public class TestMain {
 		Student student4 = new Student(171255, "강동원", korean);
 		Student student5 = new Student(171590, "김유식", math);
 		
-		goodSchool.addStudent(Student1);;
+		goodSchool.addStudent(student1);
+		goodSchoo2.addStudent(student2);
+		goodSchoo3.addStudent(student3);
+		goodSchoo4.addStudent(student4);
+		goodSchoo5.addStudent(student5);
 	}
 	
 	
