@@ -76,6 +76,8 @@ public class GenerateGradeReport {
 			} else {
 				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 			}
+			
+			buffer.append(score.getPoint());
 		}
 	}
 }
