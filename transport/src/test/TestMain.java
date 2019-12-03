@@ -34,7 +34,9 @@ public class TestMain {
 	}
 	
 	public void createStudent() {
-		Student student1 = new Student(18122, "남진현", korean);
+		Student student1 = new Student(181213, "남진현", korean);
+		Student student2 = new Student(181512, "김수현", math);
+		Student student3 = new Student(171230, "공유", korean);
 	}
 	
 	
