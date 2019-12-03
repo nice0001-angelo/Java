@@ -37,6 +37,8 @@ public class TestMain {
 		Student student1 = new Student(181213, "남진현", korean);
 		Student student2 = new Student(181512, "김수현", math);
 		Student student3 = new Student(171230, "공유", korean);
+		Student student4 = new Student(171255, "강동원", korean);
+		Student student5 = new Student(171590, "김유식", math);
 	}
 	
 	
