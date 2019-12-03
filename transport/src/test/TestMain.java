@@ -25,6 +25,9 @@ public class TestMain {
 		System.out.println(report);
 	}
 
+	public void creatSubject() {
+		
+	}
 	
 	
 	
