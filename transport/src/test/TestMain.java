@@ -39,6 +39,8 @@ public class TestMain {
 		Student student3 = new Student(171230, "공유", korean);
 		Student student4 = new Student(171255, "강동원", korean);
 		Student student5 = new Student(171590, "김유식", math);
+		
+		goodSchool.addStudent(Student1);;
 	}
 	
 	
