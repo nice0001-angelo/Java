@@ -51,6 +51,12 @@ public class TestMain {
 		korean.register(student3);
 		korean.register(student4);
 		korean.register(student5);
+		
+		math.register(student1);
+		math.register(student2);
+		math.register(student3);
+		math.register(student4);
+		math.register(student5);
 	}
 	
 	
