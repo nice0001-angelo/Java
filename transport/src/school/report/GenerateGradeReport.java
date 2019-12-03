@@ -66,4 +66,8 @@ public class GenerateGradeReport {
 	
 	//학점 평가 클래스
 	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()};
+	
+	for(int i=0; i<scoreList.size(); i++) {
+		Score score = scoreList.get(i);
+	}
 }
