@@ -25,8 +25,8 @@ public class GenerateGradeReport {
 		
 		for(Subject subject : subjectList) {
 			makeHeader(subject);
-			makebody(subject);
-			makefooter();
+			makeBody(subject);
+			makeFooter();
 		}
 		return buffer.toString();
 	}
@@ -83,4 +83,10 @@ public class GenerateGradeReport {
 			buffer.append("|");
 		}
 	}
+}
+
+
+public void makeFooter() {
+	buffer.append("\n");
+}
 }
