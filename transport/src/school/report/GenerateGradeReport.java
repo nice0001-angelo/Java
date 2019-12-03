@@ -63,4 +63,7 @@ public class GenerateGradeReport {
 		ArrayList<Score> scoreList =student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId();
 	}
+	
+	//학점 평가 클래스
+	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()};
 }
