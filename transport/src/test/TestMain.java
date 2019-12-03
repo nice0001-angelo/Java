@@ -1,6 +1,9 @@
 package test;
 
 import school.School;
+import school.Score;
+import school.Student;
+import school.Subject;
 
 public class TestMain {
 
