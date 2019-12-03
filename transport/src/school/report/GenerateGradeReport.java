@@ -78,6 +78,7 @@ public class GenerateGradeReport {
 			}
 			
 			buffer.append(score.getPoint());
+			buffer.append("|");
 		}
 	}
 }
