@@ -25,7 +25,7 @@ public class TestMain {
 		System.out.println(report);
 	}
 
-	public void creatSubject() {
+	public void createSubject() {
 		korean = new Subject("국어", Define.KOREAN);
 		math = new Subject("수학", Define.MATH);
 		
@@ -57,8 +57,31 @@ public class TestMain {
 		math.register(student3);
 		math.register(student4);
 		math.register(student5);
+		
+		addScoreForStudent(student1, korean, 95);
+		addScoreForStudent(student1, math, 56);
+		
+		addScoreForStudent(student2, korean, 95);
+		addScoreForStudent(student2, math, 95);
+		
+		addScoreForStudent(student3, korean, 100);
+		addScoreForStudent(student3, math, 88);
+		
+		addScoreForStudent(student4, korean, 89);
+		addScoreForStudent(student4, math, 95);
+		
+		addScoreForStudent(student5, korean, 85);
+		addScoreForStudent(student5, math, 56);
 	}
 	
+		public void addScoreForStudent(Student student, Subject subject, int point) {
+			Score score = new Score(student.getStudentId(), subject, point);
+			student.addSubjectScore(score);
+		}
+}
+
+	
+
 	
 	
 	
