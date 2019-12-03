@@ -13,8 +13,13 @@ public class TestMain {
 	Subject korean;
 	Subject math;
 	
+	GenerateGradeReport gradeReport = new GenerateGradeReport();
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		TestMain test = new TestMain();
+		
+		test.createSubject();
+		test.createStudent();
 
 	}
 
