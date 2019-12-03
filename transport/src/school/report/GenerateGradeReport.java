@@ -69,5 +69,8 @@ public class GenerateGradeReport {
 	
 	for(int i=0; i<scoreList.size(); i++) {
 		Score score = scoreList.get(i);
+		if(score.getSubject().getSubjectId() == subjectId) {
+			String grade;
+		}
 	}
 }
