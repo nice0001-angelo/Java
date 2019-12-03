@@ -45,6 +45,12 @@ public class TestMain {
 		goodSchool.addStudent(student3);
 		goodSchool.addStudent(student4);
 		goodSchool.addStudent(student5);
+		
+		korean.register(student1);
+		korean.register(student2);
+		korean.register(student3);
+		korean.register(student4);
+		korean.register(student5);
 	}
 	
 	
