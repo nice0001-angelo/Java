@@ -33,7 +33,7 @@ public class Subject {
 	}
 	
 	//과목번호 세팅 메소드
-	public void setSubjectId() {
+	public void setSubjectId(int subjectId) {
 		this.subjectId = subjectId;
 	}
 	

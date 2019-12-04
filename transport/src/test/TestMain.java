@@ -4,7 +4,7 @@ import school.School;
 import school.Score;
 import school.Student;
 import school.Subject;
-import school.report.*;
+import school.report.GenerateGradeReport;
 import utils.Define;
 
 public class TestMain {
