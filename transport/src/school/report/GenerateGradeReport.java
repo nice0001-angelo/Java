@@ -73,7 +73,7 @@ public class GenerateGradeReport {
 			String grade;
 			if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우
 				grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());
-			} else if(score.getSubject().getSubjectId() == ) {// 기본과목인경우
+			} else if(score.getSubject().getSubjectId() == majorId) {// 과목인경우
 				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 			} else {
 				grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
