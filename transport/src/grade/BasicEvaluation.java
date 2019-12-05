@@ -3,6 +3,7 @@ package grade;
 public class BasicEvaluation implements GradeEvaluation {
 	
 	public String getGrade(int point) {
+		
 		String grade;
 		
 		if(point >=90 && point <=100) {
