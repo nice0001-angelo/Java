@@ -12,6 +12,7 @@ public class TestMain {
 	School goodSchool = School.getInstnace();
 	Subject korean;
 	Subject math;
+	Subject dance;
 	
 	GenerateGradeReport gradeReport = new GenerateGradeReport();
 	
@@ -28,9 +29,11 @@ public class TestMain {
 	public void createSubject() {
 		korean = new Subject("국어", Define.KOREAN);
 		math = new Subject("수학", Define.MATH);
+		dance = new Subject("댄스", Define.DANCE);
 		
 		goodSchool.addSubject(korean);
 		goodSchool.addSubject(math);
+		goodSchool.addSubject(dance);
 	}
 	
 	public void createStudent() {
