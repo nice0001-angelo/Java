@@ -43,11 +43,12 @@ public class Student {
 		this.studentName = studentName;
 	}
 	
-	//전공 세팅하기 메소드
+	//전공 가져오기 메소드
 	public Subject getMajorSubject() {
 		return majorSubject;
 	}
 	
+	// 전공 세팅하기 메소드
 	public void setMajorSubject(Subject majorSubject) {
 		this.majorSubject = majorSubject;
 	}

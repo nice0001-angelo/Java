@@ -42,39 +42,63 @@ public class TestMain {
 		Student student3 = new Student(171230, "전지현", korean);
 		Student student4 = new Student(171255, "강동원", korean);
 		Student student5 = new Student(171590, "김유식", math);
+		Student student6 = new Student(171211, "테일러", dance);
+		Student student7 = new Student(171591, "오라클", dance);
+		
 		
 		goodSchool.addStudent(student1);
 		goodSchool.addStudent(student2);
 		goodSchool.addStudent(student3);
 		goodSchool.addStudent(student4);
 		goodSchool.addStudent(student5);
+		goodSchool.addStudent(student6);
+		goodSchool.addStudent(student7);
 		
 		korean.register(student1);
 		korean.register(student2);
 		korean.register(student3);
 		korean.register(student4);
 		korean.register(student5);
+		korean.register(student6);
+		korean.register(student7);
 		
 		math.register(student1);
 		math.register(student2);
 		math.register(student3);
 		math.register(student4);
 		math.register(student5);
+		math.register(student6);
+		math.register(student7);
+		
+		
+		dance.register(student1);
+		dance.register(student2);
+		dance.register(student3);
+		dance.register(student4);
+		dance.register(student5);
+		dance.register(student6);
+		dance.register(student7);
 		
 		addScoreForStudent(student1, korean, 95);
 		addScoreForStudent(student1, math, 56);
+		addScoreForStudent(student1, dance, 77);
 		
 		addScoreForStudent(student2, korean, 95);
 		addScoreForStudent(student2, math, 95);
+		addScoreForStudent(student2, dance, 36);
 		
 		addScoreForStudent(student3, korean, 100);
 		addScoreForStudent(student3, math, 88);
+		addScoreForStudent(student3, dance, 88);
+		
 		
 		addScoreForStudent(student4, korean, 89);
 		addScoreForStudent(student4, math, 95);
+		addScoreForStudent(student4, dance, 99);
 		
 		addScoreForStudent(student5, korean, 85);
 		addScoreForStudent(student5, math, 56);
+		addScoreForStudent(student5, dance, 85);
 	}
 	
 		public void addScoreForStudent(Student student, Subject subject, int point) {

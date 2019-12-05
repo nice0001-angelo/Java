@@ -65,7 +65,7 @@ public class GenerateGradeReport {
 	
 	
 	//학점 평가 클래스
-	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
+	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()};
 	
 	for(int i=0; i<scoreList.size(); i++) {
 		Score score = scoreList.get(i);
@@ -73,10 +73,10 @@ public class GenerateGradeReport {
 			String grade;
 			if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우
 				grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());
-			} else if {// 기본과목인경우
+			} else if(score.getSubject().getSubjectId() == ) {// 기본과목인경우
 				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 			} else {
-				grade = gradeEvaluation[Ddfile.PF_TYPE].getGrade(score.getPoint());
+				grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
 			}
 			
 			buffer.append(score.getPoint());
