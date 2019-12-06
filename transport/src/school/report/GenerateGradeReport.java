@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import grade.BasicEvaluation;
 import grade.MajorEvaluation;
+import grade.PassFailEvaluation;
 import grade.GradeEvaluation;
 
 import school.Student;
@@ -65,7 +66,7 @@ public class GenerateGradeReport {
 	
 	
 	//학점 평가 클래스
-	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()};
+	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
 	
 	System.out.println("GradeEvaluation: " + gradeEvaluation);
 	
