@@ -93,7 +93,7 @@ public class GenerateGradeReport {
 			
 			  if(subject.getGradeType() == Define.SAB_TYPE) { //필수과목인 경우 
 				  grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); 
-			  } else if(score.getGradeType() == Define.AB_TYPE) {// 과목인경우 
+			  } else if(subject.getGradeType() == Define.AB_TYPE) {// 과목인경우 
 				  grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); 
 			  } else { grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
 			  }
