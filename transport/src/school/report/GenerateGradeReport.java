@@ -86,7 +86,7 @@ public class GenerateGradeReport {
 			} else if(score.getSubject().getSubjectId() == majorId) {// 과목인경우
 				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 			} else {
-				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
+				grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
 			}
 			
 			
