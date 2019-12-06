@@ -31,6 +31,9 @@ public class TestMain {
 		math = new Subject("수학", Define.MATH);
 		dance = new Subject("댄스", Define.DANCE);
 		
+		// 학습평가 정책 지정
+		dance.setGradeType(Define.PF_TYPE);
+		
 		goodSchool.addSubject(korean);
 		goodSchool.addSubject(math);
 		goodSchool.addSubject(dance);

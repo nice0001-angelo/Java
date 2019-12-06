@@ -82,14 +82,22 @@ public class GenerateGradeReport {
 			System.out.println("sub: " + subjectId);
 		
 			
-			if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우
-				grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());
-			} else if(score.getSubject().getSubjectId() == majorId) {// 과목인경우
-				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
-			} else {
-				grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
-			}
+				/*
+				 * if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우 grade =
+				 * gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); } else
+				 * if(score.getSubject().getSubjectId() == majorId) {// 과목인경우 grade =
+				 * gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); } else { grade =
+				 * gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint()); }
+				 */
 			
+			
+			  if(subject.getGradeType() == Define.SAB_TYPE) { //필수과목인 경우 
+				  grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); 
+			  } else if(score.getGradeType() == Define.AB_TYPE) {// 과목인경우 
+				  grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); 
+			  } else { grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
+			  }
+			 
 			
 			
 			buffer.append(score.getPoint());
