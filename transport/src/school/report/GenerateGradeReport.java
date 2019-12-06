@@ -79,9 +79,10 @@ public class GenerateGradeReport {
 			
 				
 				  if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우 
-					  grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); } else
-				  if(score.getSubject().getSubjectId() == majorId) {// 과목인경우 
-					  grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); } else { 
+					  grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); } 
+				  else  if(score.getSubject().getSubjectId() == majorId) {// 과목인경우 
+					  grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); } 
+				  else { 
 					  grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint()); }
 				 
 			
