@@ -66,7 +66,7 @@ public class GenerateGradeReport {
 	
 	
 	//학점 평가 클래스
-	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()};
+	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
 	
 	for(int i=0; i<scoreList.size(); i++) {
 		Score score = scoreList.get(i);
@@ -74,7 +74,7 @@ public class GenerateGradeReport {
 			String grade;
 			
 			// 과목 Id 체크
-			System.out.println("sub: " + subjectId);
+//			System.out.println("sub: " + subjectId);
 		
 			
 				
