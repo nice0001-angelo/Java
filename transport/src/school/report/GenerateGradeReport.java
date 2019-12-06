@@ -77,7 +77,7 @@ public class GenerateGradeReport {
 //			System.out.println("sub: " + subjectId);
 		
 			
-			 //조건문에서 챙겨야 함	
+			 //조건문에서 챙겨야 함 남진현의 전공은 국어이므로 S 등급이 나와야 함	
 				  if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우 
 					  grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); } 
 				  else  if(score.getSubject().getSubjectId() == majorId) {// 과목인경우 
