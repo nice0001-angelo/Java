@@ -99,6 +99,14 @@ public class TestMain {
 		addScoreForStudent(student5, korean, 85);
 		addScoreForStudent(student5, math, 56);
 		addScoreForStudent(student5, dance, 85);
+		
+		addScoreForStudent(student6, korean, 89);
+		addScoreForStudent(student6, math, 95);
+		addScoreForStudent(student6, dance, 99);
+		
+		addScoreForStudent(student7, korean, 85);
+		addScoreForStudent(student7, math, 56);
+		addScoreForStudent(student7, dance, 85);
 	}
 	
 		public void addScoreForStudent(Student student, Subject subject, int point) {
