@@ -69,15 +69,24 @@ public class GenerateGradeReport {
 	
 	for(int i=0; i<scoreList.size(); i++) {
 		Score score = scoreList.get(i);
+		
+		
 		if(score.getSubject().getSubjectId() == subjectId) { // 학점산출할 과목 아이디
 			String grade;
+			
+// 과목 Id 체크
+			System.out.println("sub: " + subjectId);
+		
+			
 			if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우
 				grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());
-			} else if(score.getSubject().getSubjectId() == majorId) {// 과목인경우
-				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
+//			} else if(score.getSubject().getSubjectId() == majorId) {// 과목인경우
+//				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 			} else {
-				grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
+				grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 			}
+			
+			
 			
 			buffer.append(score.getPoint());
 			buffer.append("|");
