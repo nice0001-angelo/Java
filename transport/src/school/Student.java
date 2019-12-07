@@ -15,6 +15,8 @@ public class Student {
 	 */	 
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
 	
+	System.out.println("ArrayList:"+scoreList);
+	
 	//생성자 : 학생번호 학생명 전공
 	public Student(int studentId, String studentName, Subject majorSubject) {
 		this.studentId = studentId;

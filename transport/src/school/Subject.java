@@ -10,6 +10,8 @@ public class Subject {
 	
 	
 	// 이 과목을 수강한 신청한 학생 리스트 register() 메소드를 호출하면 이 리스트에 추가됨 
+	// <E> 의 E 파라미터는 저장되는 객체를 E 타입으로 하겠다는 것임
+	// 아래에서는 Student 타입으로 배열을 저장하겠다는 의미
 	private ArrayList<Student> studentList = new ArrayList<Student>();
 	
 	//생성자	
