@@ -44,6 +44,8 @@ public class Score {
 		this.point = point;
 	}
 	
+	
+	//toString() 메소드 재정의
 	public String toString() {
 		return "학번"+studentId+","+subject.getSubjectName()+":"+point;
 	}
