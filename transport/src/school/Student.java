@@ -11,7 +11,7 @@ public class Student {
 	/*
 	 * 과목별 점수 : 학생이 수강한 과목의 점수 리스트 
 	 * 학생이 수강한 과목의 점수 리스트, addSubjectScore()메서드가 호출되면 이
-	 * 리스트에에 추가됨
+	 * 리스트에에 추가됨 Score객체타입으로 어레이에 저장됨
 	 */	 
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
 	
