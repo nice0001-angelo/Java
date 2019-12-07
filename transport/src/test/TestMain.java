@@ -24,7 +24,7 @@ public class TestMain {
 		
 		String report = test.gradeReport.getReport(); //성적 결과 생성
 		System.out.println(report);
-		System.out.println("ArrayList:"+scoreList);
+		
 	}
 
 	public void createSubject() {
