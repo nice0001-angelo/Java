@@ -8,6 +8,8 @@ public class Subject {
 	private int subjectId;  	//과목번호
 	private int gradeType;		//과목타입
 	
+	
+	// 이 과목을 수강한 신청한 학생 리스트 register() 메소드를 호출하면 이 리스트에 추가됨 
 	private ArrayList<Student> studentList = new ArrayList<Student>();
 	
 	//생성자	
