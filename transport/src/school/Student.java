@@ -8,7 +8,11 @@ public class Student {
 	private String studentName;    //학생 이름
 	private Subject majorSubject;  //전공
 	
-	// 과목별 점수 : 학생이 수강한 과목의 점수 리스트
+	/*
+	 * 과목별 점수 : 학생이 수강한 과목의 점수 리스트 
+	 * 학생이 수강한 과목의 점수 리스트, addSubjectScore()메서드가 호출되면 이
+	 * 리스트에에 추가됨
+	 */	 
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
 	
 	//생성자 : 학생번호 학생명 전공
