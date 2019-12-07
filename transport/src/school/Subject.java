@@ -1,7 +1,7 @@
 package school;
 
 import java.util.ArrayList;
-import utils.Define;
+import utils.Define; //프로그램 전반에서 사용하는 상수 클래스
 
 public class Subject {
 	private String subjectName;  //과목명
