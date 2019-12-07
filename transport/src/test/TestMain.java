@@ -27,8 +27,6 @@ public class TestMain {
 		String report = test.gradeReport.getReport(); //성적 결과 생성
 		System.out.println(report);
 		
-		private ArrayList<Score> scoreList = new ArrayList<Score>();
-		System.out.append(scoreList);
 		
 	}
 
