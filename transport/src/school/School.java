@@ -24,23 +24,28 @@ public class School {
 			instance = new School();
 		return instance;
 	}
-	
-	public ArrayList<Student> getStudentList(){
-		return studentList;
-	}
-	
+
+	// addStudent
 	public void addStudent(Student student) {
 		studentList.add(student);
 	}
 	
+	// addSubject
 	public void addSubject(Subject subject) {
 		subjectList.add(subject);
 	}
 	
+	// ArrayList<Student> getter 
+	public ArrayList<Student> getStudentList(){
+		return studentList;
+	}
+	
+	// ArrayList<Subject> getter
 	public ArrayList<Subject> getSubjectList(){
 		return subjectList;
 	}
 	
+	// ArrayList<Subject> setter
 	public void setSubjectList(ArrayList<Subject> subjectList) {
 		this.subjectList = subjectList;
 	}
