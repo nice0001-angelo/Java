@@ -28,26 +28,37 @@ public class Subject {
 		studentList.add(student);
 	}
 	
-	//과목명 getter
+	//subjectName getter
 	public String getSubjectName() {
 		return subjectName;
 	}
 	
-	//과목명 setter
+	//subjectName setter
 	public void setSubjectName(String subjectName) {
 		this.subjectName = subjectName;
 	}
 	
-	//과목번호 getter
+	//subjectId getter
 	public int getSubjectId() {
 		return subjectId;
 	}
 	
-	//과목번호 setter
+	//subjectId setter
 	public void setSubjectId(int subjectId) {
 		this.subjectId = subjectId;
 	}
 	
+
+	//grdaeType getter
+	public int getGradeType() {
+		return gradeType;
+	}
+	
+	//gradeType setter
+	public void setGradeType(int gradeType) {
+		this.gradeType = gradeType;
+	}
+
 	//학생점수 getter
 	public ArrayList<Student> getStudentList(){
 		return studentList;
@@ -57,16 +68,5 @@ public class Subject {
 	public void setStudentList(ArrayList<Student> studentList) {
 		this.studentList = studentList;
 	}
-	
-	//과목타입 getter
-	public int getGradeType() {
-		return gradeType;
-	}
-	
-	//과목타입  setter
-	public void setGradeType(int gradeType) {
-		this.gradeType = gradeType;
-	}
-	
 
 }

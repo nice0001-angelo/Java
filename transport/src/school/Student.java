@@ -58,6 +58,7 @@ public class Student {
 		this.majorSubject = majorSubject;
 	}
 	
+	//
 	public ArrayList<Score> getScoreList(){
 		return scoreList;
 	}
