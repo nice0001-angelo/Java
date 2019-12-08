@@ -60,10 +60,10 @@ public class GenerateGradeReport {
 		return buffer.toString();
 	}
 
-	// getScoreGrade() Method
+	// getScoreGrade() Method 점수별 등급을 알아내기 위한 메소드
 	public void getScoreGrade(Student student, int subjectId) {
 		ArrayList<Score> scoreList =student.getScoreList();
-		int majorId = student.getMajorSubject().getSubjectId();
+		int majorId = student.getMajorSubject().getSubjectId(); //무슨형태인지..
 	
 	
 	//학점 평가 클래스
