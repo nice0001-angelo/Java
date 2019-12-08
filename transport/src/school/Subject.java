@@ -1,6 +1,6 @@
 package school;
 
-import java.util.ArrayList;
+import java.util.ArrayList; //배열을 관리하기 위해 임포트 받음
 import utils.Define; //프로그램 전반에서 사용하는 상수 클래스
 
 public class Subject {
