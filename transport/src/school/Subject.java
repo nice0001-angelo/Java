@@ -31,12 +31,12 @@ public class Subject {
 		this.subjectName = subjectName;
 	}
 	
-	//과목번호 가져오기 메소드
+	//과목번호 getter
 	public int getSubjectId() {
 		return subjectId;
 	}
 	
-	//과목번호 세팅 메소드
+	//과목번호 setter
 	public void setSubjectId(int subjectId) {
 		this.subjectId = subjectId;
 	}
@@ -51,12 +51,12 @@ public class Subject {
 		this.studentList = studentList;
 	}
 	
-	//그레이드타입 가져오기 메소드
+	//과목타입 getter
 	public int getGradeType() {
 		return gradeType;
 	}
 	
-	//그레이드타입  세팅 메소드
+	//과목타입  setter
 	public void setGradeType(int gradeType) {
 		this.gradeType = gradeType;
 	}
