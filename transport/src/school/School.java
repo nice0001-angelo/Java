@@ -1,5 +1,5 @@
 /*title : School Class
-field : SCHOOL_NAME
+field : instance : 정적필드 정의
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다 : 교재에는 없었지만 내가 추가 했다
 array : Subject, ArrayList<Subject> setter : 학교에 있는 과목을 배열로 저장한다
 method : addStudent : 학생을 배열에 add하는 메소드 

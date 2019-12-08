@@ -1,7 +1,7 @@
 /*title : Score Class
 field : studentId, subject, point : 학생번호, 과목(Subject타입), 점수
 getter/setter : studentId, subject, point
-method : toString()
+method : toString() : 학번+과목+점수 리턴 메소드
 */
 
 

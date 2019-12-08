@@ -1,3 +1,11 @@
+/*title : GenerateGradeReport Class
+field : SCHOOL_NAME
+array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다 : 교재에는 없었지만 내가 추가 했다
+array : Subject, ArrayList<Subject> setter : 학교에 있는 과목을 배열로 저장한다
+method : addStudent : 학생을 배열에 add하는 메소드 
+method : addSubject : 과목을 배열에 add하는 메소드
+*/
+
 /*실제 서비스를 운영하는 경우 리포트프로그램이 많은 양을 차지 한다
 여기서 학점리포트는 각 과목당 산출한다.
 데이터베이스를 사용하는 경우에 데이터베이스로부터 값을 가져오는
