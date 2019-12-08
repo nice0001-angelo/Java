@@ -7,7 +7,7 @@ public class Score {
 	int point; //점수
 	
 	
-	//생성자
+	//생성자  studentId, subject, point
 	public Score(int studentId, Subject subject, int point) {
 		this.studentId = studentId;
 		this.subject = subject;
