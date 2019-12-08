@@ -40,6 +40,10 @@ public class GenerateGradeReport {
 	public static final String HEADER = "이름 | 학번 | 필수과목 | 점수 | 등급 \n";
 	public static final String LINE = "------------------------------\n";
 	private StringBuffer buffer = new StringBuffer(); //StringBuffer()에서 생성한 buffer 변수  16자리 String
+
+	
+	
+	
 	
 	// getReort() Method 
 	public String getReport() {
@@ -60,11 +64,15 @@ public class GenerateGradeReport {
 		return buffer.toString();
 	}
 
+	
+	
+	
+	
+	
 	// getScoreGrade() Method 점수별 등급을 알아내기 위한 메소드
 	public void getScoreGrade(Student student, int subjectId) {
 		ArrayList<Score> scoreList =student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId(); //무슨형태인지..
-	
 	
 	//학점 평가 클래스
 	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
@@ -77,7 +85,6 @@ public class GenerateGradeReport {
 			// 과목 Id 체크
 //			System.out.println("sub: " + subjectId);
 		
-			
 			 //조건문에서 챙겨야 함 남진현의 전공은 국어이므로 S 등급이 나와야 함. subject.getSubject()가 왜 안먹는지?
 				  if(score.getSubject().getSubjectId() == majorId) { //필수과목인 경우 
 					  grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint()); } 
@@ -105,6 +112,13 @@ public class GenerateGradeReport {
 		}
 	  }
     }
+
+	
+	
+	
+	
+	
+	
 	
 	
 	// makeHeader Method : subjectList에서 뽑아낸 subjectName을 넣기 위해서 활용함
@@ -116,6 +130,12 @@ public class GenerateGradeReport {
 		buffer.append(GenerateGradeReport.LINE);
 	}
 
+	
+	
+	
+	
+	
+	
 	// makeBody Method : subjectList에서 뽑아낸 studentName, studetnId, subjectName을 넣기 위해서 활용함
 	public void makeBody(Subject subject) {
 		ArrayList<Student> studentList = subject.getStudentList();
@@ -136,6 +156,12 @@ public class GenerateGradeReport {
 			buffer.append(LINE);
 		}
 	}
+	
+	
+	
+	
+	
+	
 	
 	// makeFooter Method
 	public void makeFooter() {
