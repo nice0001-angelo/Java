@@ -22,6 +22,12 @@ public class Subject {
 		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식으로 default 세팅
 	}
 	
+	//수강신청 메소드 : 위에 정의한  private ArrayList<Student> studentList = new ArrayList<Student>();
+	//에서 정의한 studentList에 애드온 되는 매소드 register(student 타입 메소드 어래이)
+	public void register(Student student) {
+		studentList.add(student);
+	}
+	
 	//과목명 getter
 	public String getSubjectName() {
 		return subjectName;
@@ -62,9 +68,5 @@ public class Subject {
 		this.gradeType = gradeType;
 	}
 	
-	//수강신청 메소드 : 위에 정의한  private ArrayList<Student> studentList = new ArrayList<Student>();
-	//에서 정의한 studentList에 애드온 되는 매소드 register(student 타입 메소드 어래이)
-	public void register(Student student) {
-		studentList.add(student);
-	}
+
 }
