@@ -41,12 +41,12 @@ public class Subject {
 		this.subjectId = subjectId;
 	}
 	
-	//학생점수 가져오기 메소드
+	//학생점수 getter
 	public ArrayList<Student> getStudentList(){
 		return studentList;
 	}
 	
-	//학생점수 세팅 메소드
+	//학생점수 setter
 	public void setStudentList(ArrayList<Student> studentList) {
 		this.studentList = studentList;
 	}
