@@ -38,12 +38,12 @@ public class Student {
 		this.studentId = studentId;
 	}
 	
-	//학생이름 가져오기 메소드
+	//studentName getter
 	public String getStudentName() {
 		return studentName;
 	}
 	
-	//학생이름 세팅하기 메소드
+	//studentName setter
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
