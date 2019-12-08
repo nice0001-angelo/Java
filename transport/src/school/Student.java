@@ -28,12 +28,12 @@ public class Student {
 		scoreList.add(score);
 	}
 	
-	//학생번호 가져오기
+	//studetnId getter
 	public int getStudentId() {
 		return studentId;
 	}
 	
-	//학생번호 세팅하기 메소드
+	//studetnId setter
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
