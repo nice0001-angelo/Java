@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Student {
 	
-	private int studentId;         //학생 번호
-	private String studentName;    //학생 이름
-	private Subject majorSubject;  //전공
+	private int studentId;         //학생 번호  private로 선언되었으므로 setter와 getter가 필요함
+	private String studentName;    //학생 이름  private로 선언되었으므로 setter와 getter가 필요함
+	private Subject majorSubject;  //전공 private로 선언되었으므로 setter와 getter가 필요함
 	
 	/*
 	 * 과목별 점수 : 학생이 수강한 과목의 점수 리스트 
@@ -16,7 +16,7 @@ public class Student {
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
 	
 	
-	//생성자 : 학생번호 학생명 전공
+	//생성자 : studentId, sutdentName, majorSubject
 	public Student(int studentId, String studentName, Subject majorSubject) {
 		this.studentId = studentId;
 		this.studentName = studentName;
