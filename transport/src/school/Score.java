@@ -1,3 +1,7 @@
+/*점수를 관리하는 클래스로써 학번,과목,점수가 관리된다
+학생과 과목의 매칭점수가 나온다
+*/
+
 package school;
 
 public class Score {
