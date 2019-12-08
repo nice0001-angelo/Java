@@ -1,3 +1,8 @@
+/*title : Subject Class
+field : subjectName, subjectId, gradeType : 과목명, 과목번호, 과목성적타입
+array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다
+*/
+
 /*학교는 유일한 객체이므로 싱글톤 패턴으로 구현한다.
 즉 객체생성할 일이 없다는 이야기다 모두 private으로 세팅한다
 싱글톤 패턴은 객체를 여러개 생성할 필요가 없는 것이다

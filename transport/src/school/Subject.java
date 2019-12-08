@@ -1,5 +1,5 @@
 /*title : Subject Class
-field : subjectName, subjectId, gradeType
+field : subjectName, subjectId, gradeType : 과목명, 과목번호, 과목성적타입
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다
 */
 
@@ -11,7 +11,7 @@ import utils.Define; //프로그램 전반에서 사용하는 상수 클래스
 public class Subject {
 	private String subjectName;  //과목명  private로 선언했으므로 setter 와 getter가 필요함
 	private int subjectId;  	//과목번호 private로 선언했으므로 setter 와 getter가 필요함
-	private int gradeType;		//과목타입 private로 선언했으므로 setter 와 getter가 필요함
+	private int gradeType;		//과목성적타입 private로 선언했으므로 setter 와 getter가 필요함
 	
 	// 이 과목을 수강한 신청한 학생 리스트 register() 메소드를 호출하면 이 리스트에 추가됨 
 	// <E> 의 E 파라미터는 저장되는 객체를 E 타입으로 하겠다는 것임

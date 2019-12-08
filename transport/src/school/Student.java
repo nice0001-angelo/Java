@@ -1,5 +1,5 @@
 /*title : Student Class
-field : studentId, studentName, majorSubject
+field : studentId, studentName, majorSubject : 학생번호, 학생이름, 전공과목
 array : score, ArrayList<Score> setter : 학생의 과목별 점수를 배열로 저장한다
 */
 package school;
