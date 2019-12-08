@@ -2,7 +2,7 @@
 field : studentId, studentName, majorSubject : 학생번호, 학생이름, 전공과목
 array : score, ArrayList<Score> setter : 학생의 과목별 점수를 배열로 저장한다
 setter/getter : studentId, studentName, majorSubject
-method : addSubjectScore
+method : addSubjectScore() : scoreList 에 점수를 추가하는 메소드
 */
 package school;
 

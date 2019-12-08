@@ -1,6 +1,8 @@
 /*title : Subject Class
 field : subjectName, subjectId, gradeType : 과목명, 과목번호, 과목성적타입
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다
+setter/getter : subjectName, subjectId, grdaeType
+method : register()
 */
 
 package school;
