@@ -2,9 +2,12 @@
 field : school, TITLE, HEADER, LINE, buffer
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다 : 교재에는 없었지만 내가 추가 했다
 array : Subject, ArrayList<Subject> setter : 학교에 있는 과목을 배열로 저장한다
-method : makeHeader : 학생을 배열에 add하는 메소드 
+method : getReport : 리포트생성 메소드 : 
+method : getScoreGrade : 점수별 등급을 가져오는 메소드
+method : makeHeader : 리포트의 헤더 부분을 보여주는 메소드 : 제목, 타이틀(이름,학번,필수과목,점수,등급)
 method : makeBody : 과목을 배열에 add하는 메소드
 method : makeFooter : 과목을 배열에 add하는 메소드
+
 
 */
 
@@ -50,34 +53,6 @@ public class GenerateGradeReport {
 		return buffer.toString();
 	}
 
-	
-	public void makeHeader(Subject subject) {
-		buffer.append(GenerateGradeReport.LINE);
-		buffer.append("\t"+subject.getSubjectName());
-		buffer.append(GenerateGradeReport.TITLE);
-		buffer.append(GenerateGradeReport.HEADER);
-		buffer.append(GenerateGradeReport.LINE);
-	}
-
-	public void makeBody(Subject subject) {
-		ArrayList<Student> studentList = subject.getStudentList();
-		
-		for(int i = 0 ; i< studentList.size(); i++) {
-			Student student = studentList.get(i);
-			buffer.append(student.getStudentName());
-			buffer.append("|");
-			buffer.append(student.getStudentId());
-			buffer.append("|");
-			buffer.append(student.getMajorSubject().getSubjectName()+"\t");
-			buffer.append("|");
-			
-			getScoreGrade(student, subject.getSubjectId());
-			
-			buffer.append("\n");
-			buffer.append(LINE);
-		}
-	}
-	
 	public void getScoreGrade(Student student, int subjectId) {
 		ArrayList<Score> scoreList =student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId();
@@ -120,11 +95,44 @@ public class GenerateGradeReport {
 			buffer.append(grade);
 			buffer.append("|");
 		}
-	}
+	  }
     }
+	
+	public void makeHeader(Subject subject) {
+		buffer.append(GenerateGradeReport.LINE);
+		buffer.append("\t"+subject.getSubjectName());
+		buffer.append(GenerateGradeReport.TITLE);
+		buffer.append(GenerateGradeReport.HEADER);
+		buffer.append(GenerateGradeReport.LINE);
+	}
 
-
+	public void makeBody(Subject subject) {
+		ArrayList<Student> studentList = subject.getStudentList();
+		
+		for(int i = 0 ; i< studentList.size(); i++) {
+			Student student = studentList.get(i);
+			buffer.append(student.getStudentName());
+			buffer.append("|");
+			buffer.append(student.getStudentId());
+			buffer.append("|");
+			buffer.append(student.getMajorSubject().getSubjectName()+"\t");
+			buffer.append("|");
+			
+			getScoreGrade(student, subject.getSubjectId());
+			
+			buffer.append("\n");
+			buffer.append(LINE);
+		}
+	}
+	
+	
 	public void makeFooter() {
 		buffer.append("\n");
 	}
+	
+	
+
+
+
+
 }
