@@ -14,32 +14,32 @@ public class Score {
 		this.point = point;
 	}
 	
-	//학생번호 가져오기 메소드
+	//studentId getter
 	public int getStudentId() {
 		return studentId;
 	}
 	
-	//학생번호 세팅하기 메소드
+	//studentId setter
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 	
-	//과목 가져오기 메소드
+	//subject getter
 	public Subject getSubject() {
 		return subject;
 	}
 	
-	//과목 세팅하기 메소드
+	//subject setter
 	public void setSubject(Subject subject) {
 		this.subject = subject;
 	}
 	
-	//점수가져오기 메소드
+	//point getter
 	public int getPoint() {
 		return point;
 	}
 	
-	//점수 세팅하기 메소드
+	//point setter
 	public void setPoint(int point) {
 		this.point = point;
 	}
