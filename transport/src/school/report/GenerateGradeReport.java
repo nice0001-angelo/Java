@@ -41,10 +41,14 @@ public class GenerateGradeReport {
 	public static final String LINE = "------------------------------\n";
 	private StringBuffer buffer = new StringBuffer();
 	
-	// getReort() Method
+	// getReort() Method 
 	public String getReport() {
-		ArrayList<Subject> subjectList = school.getSubjectList();
 		
+		// School 클래스에서 가져온 인스턴스를 school로  객체생성(위로 7번째줄 chool school = School.getInstnace();)
+		// 그 뒤에 school.getSubjectList로 School 클래스의 내용을 가져옴 (과목리스트를 가져옴)
+		ArrayList<Subject> subjectList = school.getSubjectList();
+				
+		// 향상된 for 문 subjectList 배열에서 한개씩 subject 변수로 데이터를 뽑아냄
 		for(Subject subject : subjectList) {
 			makeHeader(subject);
 			makeBody(subject);
