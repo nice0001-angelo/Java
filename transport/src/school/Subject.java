@@ -4,9 +4,9 @@ import java.util.ArrayList; //배열을 관리하기 위해 임포트 받음
 import utils.Define; //프로그램 전반에서 사용하는 상수 클래스
 
 public class Subject {
-	private String subjectName;  //과목명
-	private int subjectId;  	//과목번호
-	private int gradeType;		//과목타입
+	private String subjectName;  //과목명  private로 선언했으므로 setter 와 getter가 필요함
+	private int subjectId;  	//과목번호 private로 선언했으므로 setter 와 getter가 필요함
+	private int gradeType;		//과목타입 private로 선언했으므로 setter 와 getter가 필요함
 	
 	
 	// 이 과목을 수강한 신청한 학생 리스트 register() 메소드를 호출하면 이 리스트에 추가됨 
@@ -21,12 +21,12 @@ public class Subject {
 		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식
 	}
 	
-	//과목명 가져오기 메소드
+	//과목명 getter
 	public String getSubjectName() {
 		return subjectName;
 	}
 	
-	//과목명 세팅 메소드
+	//과목명 setter
 	public void setSubjectName(String subjectName) {
 		this.subjectName = subjectName;
 	}
