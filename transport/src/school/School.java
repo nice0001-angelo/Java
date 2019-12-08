@@ -3,6 +3,7 @@ field : SCHOOL_NAME
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다 : 교재에는 없었지만 내가 추가 했다
 array : Subject, ArrayList<Subject> setter : 학교에 있는 과목을 배열로 저장한다
 method : addStudent : 학생을 배열에 add하는 메소드 
+method : addSubject : 과목을 배열에 add하는 메소드
 */
 
 /*학교는 유일한 객체이므로 싱글톤 패턴으로 구현한다.
@@ -40,12 +41,12 @@ public class School {
 	private ArrayList<Subject> subjectList = new ArrayList<Subject>(); //과목 리스트
 	
 	
-	// addStudent : 
+	// addStudent : 학생을 배열에 동록하는 메소드
 	public void addStudent(Student student) {
 		studentList.add(student);
 	}
 	
-	// addSubject
+	// addSubject : 과목을 배열에 등록하는 메소드
 	public void addSubject(Subject subject) {
 		subjectList.add(subject);
 	}
