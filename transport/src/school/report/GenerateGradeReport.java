@@ -1,9 +1,11 @@
 /*title : GenerateGradeReport Class
-field : SCHOOL_NAME
+field : school, TITLE, HEADER, LINE, buffer
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다 : 교재에는 없었지만 내가 추가 했다
 array : Subject, ArrayList<Subject> setter : 학교에 있는 과목을 배열로 저장한다
-method : addStudent : 학생을 배열에 add하는 메소드 
-method : addSubject : 과목을 배열에 add하는 메소드
+method : makeHeader : 학생을 배열에 add하는 메소드 
+method : makeBody : 과목을 배열에 add하는 메소드
+method : makeFooter : 과목을 배열에 add하는 메소드
+
 */
 
 /*실제 서비스를 운영하는 경우 리포트프로그램이 많은 양을 차지 한다
@@ -44,6 +46,7 @@ public class GenerateGradeReport {
 			makeBody(subject);
 			makeFooter();
 		}
+		// string로 변환
 		return buffer.toString();
 	}
 
