@@ -39,12 +39,12 @@ public class GenerateGradeReport {
 	public static final String TITLE = "수강생 학점 \t\t\n";
 	public static final String HEADER = "이름 | 학번 | 필수과목 | 점수 | 등급 \n";
 	public static final String LINE = "------------------------------\n";
-	private StringBuffer buffer = new StringBuffer();
+	private StringBuffer buffer = new StringBuffer(); //StringBuffer()에서 생성한 buffer 변수  16자리 String
 	
 	// getReort() Method 
 	public String getReport() {
 		
-		// School 클래스에서 가져온 인스턴스를 school로  객체생성(위로 7번째줄 chool school = School.getInstnace();)
+		// School 클래스에서 가져온 인스턴스를 school로  객체생성(위로 7번째줄 School school = School.getInstnace();)
 		// 그 뒤에 school.getSubjectList로 School 클래스의 내용을 가져옴 (과목리스트를 가져옴)
 		ArrayList<Subject> subjectList = school.getSubjectList();
 				
@@ -54,7 +54,9 @@ public class GenerateGradeReport {
 			makeBody(subject);
 			makeFooter();
 		}
-		// string로 변환
+		// string로 변환 : StringBuffer.class에 존재하는  toString() 메소드
+		// 위에서 StringBuffer() 클래스를  buffer로 생성하고 buffer.toString()으로 접근한것임
+		// buffer에 담아서 String타입으로 리턴하는 것임
 		return buffer.toString();
 	}
 
@@ -105,7 +107,7 @@ public class GenerateGradeReport {
     }
 	
 	
-	// makeHeader Method
+	// makeHeader Method : subjectList에서 뽑아낸 subjectName을 넣기 위해서 활용함
 	public void makeHeader(Subject subject) {
 		buffer.append(GenerateGradeReport.LINE);
 		buffer.append("\t"+subject.getSubjectName());
@@ -114,7 +116,7 @@ public class GenerateGradeReport {
 		buffer.append(GenerateGradeReport.LINE);
 	}
 
-	// makeBody Method
+	// makeBody Method : subjectList에서 뽑아낸 studentName, studetnId, subjectName을 넣기 위해서 활용함
 	public void makeBody(Subject subject) {
 		ArrayList<Student> studentList = subject.getStudentList();
 		
@@ -127,6 +129,7 @@ public class GenerateGradeReport {
 			buffer.append(student.getMajorSubject().getSubjectName()+"\t");
 			buffer.append("|");
 			
+			//점수별 등급을 알아내기 위해서 호출함
 			getScoreGrade(student, subject.getSubjectId());
 			
 			buffer.append("\n");
