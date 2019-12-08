@@ -15,6 +15,7 @@ public class Student {
 	 */	 
 	private ArrayList<Score> scoreList = new ArrayList<Score>();
 	
+
 	
 	//생성자 : studentId, sutdentName, majorSubject
 	public Student(int studentId, String studentName, Subject majorSubject) {
@@ -22,11 +23,17 @@ public class Student {
 		this.studentName = studentName;
 		this.majorSubject = majorSubject;
 	}
+
+	
+	
 	
 	// scoreList에 점수를 추가하는 메소드
 	public void addSubjectScore(Score score) {
 		scoreList.add(score);
 	}
+	
+	
+	
 	
 	//studetnId getter
 	public int getStudentId() {
@@ -58,11 +65,12 @@ public class Student {
 		this.majorSubject = majorSubject;
 	}
 	
-	//
+	//ArrayList<Score> getter
 	public ArrayList<Score> getScoreList(){
 		return scoreList;
 	}
 	
+	//ArrayList<Score> setter
 	public void setScoreList(ArrayList<Score> scoreList) {
 		this.scoreList = scoreList;
 	}
