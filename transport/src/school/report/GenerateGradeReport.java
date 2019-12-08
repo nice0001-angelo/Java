@@ -2,7 +2,7 @@
 field : school, TITLE, HEADER, LINE, buffer
 array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다 : 교재에는 없었지만 내가 추가 했다
 array : Subject, ArrayList<Subject> setter : 학교에 있는 과목을 배열로 저장한다
-method : getReport : 리포트생성 메소드 : 
+method : getReport : 리포트생성 메소드 
 method : getScoreGrade : 점수별 등급을 가져오는 메소드
 method : makeHeader : 리포트의 헤더 부분을 보여주는 메소드 : 제목, 타이틀(이름,학번,필수과목,점수,등급)
 method : makeBody : 과목을 배열에 add하는 메소드
@@ -41,6 +41,7 @@ public class GenerateGradeReport {
 	public static final String LINE = "------------------------------\n";
 	private StringBuffer buffer = new StringBuffer();
 	
+	// getReort() Method
 	public String getReport() {
 		ArrayList<Subject> subjectList = school.getSubjectList();
 		
@@ -53,6 +54,7 @@ public class GenerateGradeReport {
 		return buffer.toString();
 	}
 
+	// getScoreGrade() Method
 	public void getScoreGrade(Student student, int subjectId) {
 		ArrayList<Score> scoreList =student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId();
@@ -98,6 +100,8 @@ public class GenerateGradeReport {
 	  }
     }
 	
+	
+	// makeHeader Method
 	public void makeHeader(Subject subject) {
 		buffer.append(GenerateGradeReport.LINE);
 		buffer.append("\t"+subject.getSubjectName());
@@ -106,6 +110,7 @@ public class GenerateGradeReport {
 		buffer.append(GenerateGradeReport.LINE);
 	}
 
+	// makeBody Method
 	public void makeBody(Subject subject) {
 		ArrayList<Student> studentList = subject.getStudentList();
 		
@@ -125,14 +130,9 @@ public class GenerateGradeReport {
 		}
 	}
 	
-	
+	// makeFooter Method
 	public void makeFooter() {
 		buffer.append("\n");
 	}
-	
-	
-
-
-
 
 }
