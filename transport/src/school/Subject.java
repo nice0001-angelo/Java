@@ -14,11 +14,12 @@ public class Subject {
 	// 아래에서는 Student 타입으로 배열을 저장하겠다는 의미
 	private ArrayList<Student> studentList = new ArrayList<Student>();
 	
-	//생성자	
+	
+	//생성자 subjectName, subjectId	
 	public Subject(String subjectName, int subjectId) {
 		this.subjectName = subjectName;
 		this.subjectId = subjectId;
-		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식
+		this.gradeType = Define.AB_TYPE; //학점평가정책은 기본으로 A,B 방식으로 default 세팅
 	}
 	
 	//과목명 getter
