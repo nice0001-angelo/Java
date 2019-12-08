@@ -21,6 +21,7 @@ public class School {
 	
 	
 	// School getInstance()
+	// 외부에서 싱글턴 객체를 얻는 유일한 방법임
 	public static School getInstnace() {
 		if(instance == null)
 			instance = new School();
