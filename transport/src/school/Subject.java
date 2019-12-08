@@ -1,3 +1,8 @@
+/*title : Subject Class
+field : subjectName, subjectId, gradeType
+array : Student, ArrayList<Student> setter : 과목별 학생을 배열로 저장한다
+*/
+
 package school;
 
 import java.util.ArrayList; //배열을 관리하기 위해 임포트 받음

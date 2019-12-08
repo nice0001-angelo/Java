@@ -1,3 +1,7 @@
+/*title : Student Class
+field : studentId, studentName, majorSubject
+array : score, ArrayList<Score> setter : 학생의 과목별 점수를 배열로 저장한다
+*/
 package school;
 
 import java.util.ArrayList;
