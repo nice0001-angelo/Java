@@ -9,10 +9,10 @@ package school.report;
 
 import java.util.ArrayList;
 
+import grade.GradeEvaluation;
 import grade.BasicEvaluation;
 import grade.MajorEvaluation;
 import grade.PassFailEvaluation;
-import grade.GradeEvaluation;
 
 import school.Student;
 import school.Subject;
