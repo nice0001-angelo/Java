@@ -25,6 +25,8 @@ public class Subject {
 	}
 	
 	
+	
+	
 	//수강신청 메소드 : 위에 정의한  private ArrayList<Student> studentList = new ArrayList<Student>();
 	//에서 정의한 studentList에 애드온 되는 매소드 register(student 타입 메소드 어래이)
 	public void register(Student student) {
