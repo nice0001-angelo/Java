@@ -76,7 +76,7 @@ public class GenerateGradeReport {
 		ArrayList<Score> scoreList =student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId(); //무슨형태인지..
 	
-	//학점 평가 클래스
+	//학점 평가 클래스 배열로 각각의 평가값을 받음(기본, 전공, 패스페일)
 	GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
 	
 	for(int i=0; i<scoreList.size(); i++) {
