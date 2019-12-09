@@ -66,6 +66,8 @@ public class GenerateGradeReport {
 
 	
 	
+
+	
 	
 	
 	
@@ -92,6 +94,7 @@ public class GenerateGradeReport {
 					  grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); } 
 				  else { 
 					  grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint()); }
+				  
 				 
 			
 			
