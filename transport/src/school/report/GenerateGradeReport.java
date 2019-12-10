@@ -45,7 +45,7 @@ public class GenerateGradeReport {
 	
 	
 	
-	// getReort() Method 
+	// getReoport() Method 
 	public String getReport() {
 		
 		// School 클래스에서 가져온 인스턴스를 school로  객체생성(위로 7번째줄 School school = School.getInstnace();)
