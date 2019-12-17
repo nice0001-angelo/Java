@@ -1,7 +1,7 @@
 /*title : TestMain Class
 field : goodSchool, korean, math, dance.
-method : createSubject : 리포트생성 메소드 
-method : getScoreGrade : 점수별 등급을 가져오는 메소드
+method : createSubject : 과목생성 메소드 
+method : createStudent : 학생생성 메소드
 method : makeHeader : 리포트의 헤더 부분을 보여주는 메소드 : 제목, 타이틀(이름,학번,필수과목,점수,등급)
 method : makeBody : 과목을 배열에 add하는 메소드
 method : makeFooter : 과목을 배열에 add하는 메소드
