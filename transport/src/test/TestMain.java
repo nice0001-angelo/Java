@@ -125,7 +125,9 @@ public class TestMain {
 		addScoreForStudent(student7, math, 56);
 		addScoreForStudent(student7, dance, 85);
 	}
+		
 	
+		// 학생별 과목별 점수 생성
 		public void addScoreForStudent(Student student, Subject subject, int point) {
 			Score score = new Score(student.getStudentId(), subject, point);
 			student.addSubjectScore(score);
