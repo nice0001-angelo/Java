@@ -52,6 +52,7 @@ public class TestMain {
 		goodSchool.addSubject(dance);
 	}
 	
+	// 학생 전공 생성
 	public void createStudent() {
 		Student student1 = new Student(181213, "남진현", korean);
 		Student student2 = new Student(181512, "김수현", math);
