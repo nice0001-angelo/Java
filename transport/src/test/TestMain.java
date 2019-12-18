@@ -127,7 +127,7 @@ public class TestMain {
 	}
 		
 	
-		// 학생별 과목별 점수 생성.  한꺼번에 3개 파라미터
+		// 학생별 과목별 점수 생성.  한꺼번에 3개 파라미터, spring boot 활용 생각
 		public void addScoreForStudent(Student student, Subject subject, int point) {
 			Score score = new Score(student.getStudentId(), subject, point);
 			student.addSubjectScore(score);
